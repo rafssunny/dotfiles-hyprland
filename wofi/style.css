@@ -1,0 +1,55 @@
+/* ===== WOFI DARK BLUE ===== */
+window {
+    margin: 0;
+    padding: 12px;
+    border-radius: 12px;
+
+    background-color: rgba(8, 12, 24, 0.45);
+
+    border: 1px solid #3aaaff;
+
+    backdrop-filter: blur(8px);
+}
+
+#input {
+    margin: 6px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(13, 21, 43, 0.60);
+    color: #d0d8ff;
+    font-size: 15px;
+    border: 1px solid rgba(58, 170, 255, 0.35);
+
+    transition: background-color 0.2s ease, border 0.2s ease;
+}
+
+#entry {
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 6px;
+    color: #ccd6ff;
+    background: transparent;
+
+    transition: background-color 0.18s ease, 
+                border-color 0.18s ease,
+                backdrop-filter 0.25s ease,
+                transform 0.18s ease;
+}
+
+#entry:selected {
+    background-color: rgba(58, 170, 255, 0.22);
+    color: #ffffff;
+    border: 1px solid #3aaaff;
+
+    backdrop-filter: blur(3px);
+    transform: scale(1.03);
+}
+
+#text {
+    font-size: 14px;
+    color: #ccd6ff;
+}
+
+#img {
+    margin-right: 8px;
+}
