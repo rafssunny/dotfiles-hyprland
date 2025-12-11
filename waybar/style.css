@@ -37,10 +37,11 @@ button:hover {
 
 #workspaces button {
     color: #7aa2f7;
-    padding: 0 12px;
-    margin: 3px 2px;
     background: rgba(36, 40, 59, 0.6);
-    border-radius: 8px;
+    padding: 0 9px;
+    margin: 3px 2px;
+    border-radius: 100%;
+    transition: 0.25s ease;
 }
 
 #workspaces button:hover {
@@ -51,8 +52,8 @@ button:hover {
 #workspaces button.focused {
     background: linear-gradient(135deg, #3d59a1 0%, #7aa2f7 100%);
     color: #ffffff;
-    box-shadow: 0 2px 8px rgba(122, 162, 247, 0.4);
     font-weight: bold;
+    box-shadow: 0 2px 8px rgba(122, 162, 247, 0.4);
 }
 
 #workspaces button.active {
@@ -66,6 +67,7 @@ button:hover {
     color: #f7768e;
     animation: pulse 2s infinite;
 }
+
 
 /* MÓDULOS */
 #clock,
@@ -95,7 +97,13 @@ button:hover {
 }
 
 /* CLOCK */
-#clock { color: #7dcfff; font-weight: bold; }
+#clock {
+    color: #7dcfff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px; 
+}
+
 
 /* CPU */
 #cpu { color: #73daca; }

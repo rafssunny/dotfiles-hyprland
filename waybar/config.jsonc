@@ -4,12 +4,11 @@
     "spacing": 4,
 
     "modules-left": [ "hyprland/workspaces" ],
-    "modules-center": [ "hyprland/window" ],
+    "modules-center": [ "clock" ],
     "modules-right": [
         "pulseaudio",
         "cpu",
         "memory",
-        "clock",
         "tray",
         "custom/power"
     ],
@@ -17,20 +16,16 @@
     "hyprland/workspaces": {
         "format": "{}"
     },
-    
-    "hyprland/window": {
-        "format": "{}"
-    },
 
     "cpu": {
         "format": "{usage}% ",
-        "on-click": "kitty -e htop",
+        "on-click": "kitty -e btop",
         "tooltip": false
     },
 
     "memory": {
         "format": "{}% ",
-        "on-click": "kitty -e htop"
+        "on-click": "kitty -e btop"
     },
 
     "pulseaudio": {
@@ -51,9 +46,11 @@
     },
 
     "clock": {
+        "format": "   {:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
+        "format-alt": "   {:%Y-%m-%d}"
+    }
+    ,
 
     "custom/power": {
         "format": "⏻ ",
