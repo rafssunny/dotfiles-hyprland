@@ -5,10 +5,10 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #e5e5e5;
+    background-color: rgba(20, 0, 30, 0.9);
+    color: #e6d7ff;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(123, 97, 255, 0.25);
     margin: 6px 8px;
     transition: background-color 0.3s ease;
 }
@@ -21,17 +21,17 @@ button {
     border: none;
     border-radius: 8px;
     background: transparent;
-    color: #e5e5e5;
+    color: #e6d7ff;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background: rgba(255, 255, 255, 0.12);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+    background: rgba(123, 97, 255, 0.15);
+    box-shadow: inset 0 0 0 1px rgba(163, 146, 255, 0.35);
 }
 
 #workspaces {
-    background: rgba(20, 20, 20, 0.4);
+    background: rgba(30, 10, 40, 0.5);
     border-radius: 14px;
     padding: 5px 8px;
 }
@@ -40,37 +40,37 @@ button:hover {
     padding: 6px;
     margin: 4px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.17);
+    background: rgba(163, 146, 255, 0.25);
     transition: 0.15s ease;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.23);
+    box-shadow: 0 0 4px rgba(178, 165, 255, 0.4);
 }
 
 #workspaces button:hover {
-    background: rgba(255, 255, 255, 0.55);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
+    background: rgba(193, 180, 255, 0.7);
+    box-shadow: 0 0 10px rgba(208, 200, 255, 0.9);
 }
 
 #workspaces .active {
-    background: rgba(255, 255, 255, 0.85);
-    color: #000;
+    background: rgba(228, 222, 255, 0.95);
+    color: #2a004d;
     box-shadow:
-        0 0 3px rgba(255, 255, 255, 0.95),
-        0 0 3px rgba(255, 255, 255, 0.55);
+        0 0 3px rgba(208, 200, 255, 1),
+        0 0 3px rgba(178, 165, 255, 0.7);
 }
 
 #workspaces .visible {
-    background: rgba(255, 250, 250, 0.863);
+    background: rgba(213, 204, 255, 0.9);
 }
 
 #workspaces .urgent {
-    background: rgba(255, 90, 90, 0.9);
+    background: rgba(255, 90, 150, 0.9);
     box-shadow:
-        0 0 3px rgba(255, 90, 90, 1),
-        0 0 3px rgba(255, 90, 90, 0.7);
+        0 0 3px rgba(255, 110, 180, 1),
+        0 0 3px rgba(255, 90, 150, 0.7);
 }
 
 #workspaces .inactive {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(123, 97, 255, 0.2);
 }
 
 #clock,
@@ -79,12 +79,12 @@ button:hover {
 #pulseaudio,
 #tray,
 #window {
-    background: rgba(18, 18, 18, 0.8);
+    background: rgba(40, 15, 55, 0.85);
     padding: 0 15px;
     margin: 3px 2px;
     border-radius: 10px;
-    color: #e5e5e5;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e6d7ff;
+    border: 1px solid rgba(148, 130, 255, 0.25);
     transition: all 0.3s ease;
 }
 
@@ -93,8 +93,8 @@ button:hover {
 #memory:hover,
 #pulseaudio:hover,
 #tray:hover {
-    background: rgba(26, 26, 26, 0.85);
-    border-color: rgba(255, 255, 255, 0.30);
+    background: rgba(50, 25, 65, 0.9);
+    border-color: rgba(178, 165, 255, 0.45);
 }
 
 #clock {
@@ -104,30 +104,30 @@ button:hover {
     padding: 10px;
 }
 
-#cpu { color: #d0d0d0; }
+#cpu { color: #d4c7ff; }
 
-#memory { color: #eaeaea; }
+#memory { color: #eee5ff; }
 
-#pulseaudio { color: #ffffff; }
-#pulseaudio.muted { color: #666; }
+#pulseaudio { color: #f0ebff; }
+#pulseaudio.muted { color: #8a7aa3; }
 
-#tray { color: #e5e5e5; }
+#tray { color: #e6d7ff; }
 
 #custom-power {
-    color: #ff6b6b;
+    color: #ff80d5;
     padding: 0 12px;
     margin: 3px 5px;
-    background: rgba(20, 20, 20, 0.7);
+    background: rgba(50, 15, 65, 0.75);
     border-radius: 10px;
-    border: 1px solid rgba(255, 100, 100, 0.2);
+    border: 1px solid rgba(255, 130, 220, 0.3);
 }
 
 #custom-power:hover {
-    background: rgba(255, 100, 100, 0.2);
+    background: rgba(255, 130, 220, 0.25);
 }
 
 #window {
-    color: #e5e5e5;
+    color: #e6d7ff;
     font-style: italic;
 }
 

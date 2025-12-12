@@ -2,7 +2,8 @@
 {
     "height": 30,
     "spacing": 4,
-
+    "style": "~/.config/waybar/style.css",
+    
     "modules-left": [ "hyprland/workspaces" ],
     "modules-center": [ "clock" ],
     "modules-right": [
@@ -56,4 +57,5 @@
         "format": "⏻ ",
         "on-click": "nwg-bar"
     }
+    
 }
