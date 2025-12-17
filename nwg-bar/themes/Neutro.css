@@ -5,10 +5,10 @@
 }
 
 window#waybar {
-    background-color: rgba(5, 15, 40, 0.35);
-    color: #d9e6ff;
+    background-color: rgba(20, 20, 20, 0.4);
+    color: #e0e0e0;
     border-radius: 12px;
-    border: 1px solid rgba(120, 170, 255, 0.15);
+    border: 1px solid rgba(200, 200, 200, 0.12);
     margin: 6px 8px;
     transition: background-color 0.3s ease, border 0.3s ease;
 }
@@ -21,7 +21,7 @@ button {
     background: transparent;
     border: none;
     border-radius: 0;
-    color: #d9e6ff;
+    color: #e0e0e0;
     padding: 0 10px;
     transition: color 0.2s ease;
 }
@@ -31,7 +31,7 @@ button:hover {
 }
 
 #workspaces {
-    background: rgba(15, 25, 60, 0.28);
+    background: rgba(40, 40, 40, 0.35);
     border-radius: 6px;
     padding: 5px 8px;
     margin: 4px;
@@ -41,35 +41,31 @@ button:hover {
     padding: 6px 10px;
     margin: 4px;
     border-radius: 2px;
-    background: rgba(120, 180, 255, 0.22);
+    background: rgba(180, 180, 180, 0.18);
     box-shadow: none;
     transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 #workspaces button:hover {
-    background: rgba(170, 210, 255, 0.6);
-    box-shadow: none;
+    background: rgba(210, 210, 210, 0.4);
 }
 
 #workspaces .active {
-    background: rgba(220, 235, 255, 0.85);
-    color: #002b5a;
-    box-shadow: none;
+    background: rgba(235, 235, 235, 0.85);
+    color: #202020;
 }
 
 #workspaces .visible {
-    background: rgba(200, 225, 255, 0.75);
-    box-shadow: none;
+    background: rgba(215, 215, 215, 0.7);
 }
 
 #workspaces .urgent {
-    background: rgba(255, 100, 120, 0.8);
-    box-shadow: none;
+    background: rgba(180, 80, 80, 0.75);
+    color: #ffffff;
 }
 
 #workspaces .inactive {
-    background: rgba(100, 160, 255, 0.18);
-    box-shadow: none;
+    background: rgba(160, 160, 160, 0.15);
 }
 
 #clock,
@@ -82,7 +78,7 @@ button:hover {
     border: none;
     margin: 0;
     padding: 0 10px;
-    color: #d9e6ff;
+    color: #e0e0e0;
     transition: color 0.2s ease;
 }
 
@@ -99,27 +95,28 @@ button:hover {
 }
 
 #cpu {
-    color: #cce0ff;
+    color: #d0d0d0;
 }
 
 #memory {
-    color: #e6f0ff;
+    color: #e8e8e8;
 }
 
 #pulseaudio {
-    color: #f0f7ff;
+    color: #f2f2f2;
 }
 
 #pulseaudio.muted {
-    color: #8a9bb8;
+    color: #9a9a9a;
 }
 
 #tray {
-    color: #d9e6ff;
+    color: #e0e0e0;
 }
 
 #window {
     font-style: italic;
+    color: #cfcfcf;
 }
 
 #custom-power {
@@ -127,7 +124,7 @@ button:hover {
     border: none;
     margin: 0;
     padding: 0 12px;
-    color: #80b3ff;
+    color: #bdbdbd;
     transition: color 0.2s ease;
 }
 
