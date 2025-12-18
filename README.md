@@ -7,6 +7,12 @@ Algumas das coisas que estão aí eu peguei ou me inspirei de outros dotfiles!!
 
 # Video
 [![Vídeo de demonstração do meu hyprland](https://img.youtube.com/vi/BsWeuyK642c/maxresdefault.jpg)](https://www.youtube.com/watch?v=BsWeuyK642c)
+<p align="center">
+  <a href="https://youtu.be/BsWeuyK642c">
+    Vídeo de demonstração
+  </a>
+</p>
+
 
 # Screenshots
 ![Screenshot](screenshots/1.png)
