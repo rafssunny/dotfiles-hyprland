@@ -6,7 +6,7 @@ Some of the things in here I took or got inspiration from other dotfiles!
 Algumas das coisas que estão aí eu peguei ou me inspirei de outros dotfiles!!
 
 # Video
-![Vídeo de demonstração do meu rice](videos/2025-12-18%2015-43-01.mp4)
+[![Vídeo de demonstração do meu hyprland](https://img.youtube.com/vi/BsWeuyK642c/maxresdefault.jpg)](https://www.youtube.com/watch?v=BsWeuyK642c)
 
 # Screenshots
 ![Screenshot](screenshots/1.png)
