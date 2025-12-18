@@ -1,0 +1,49 @@
+* {
+  background-color: transparent;
+}
+
+window {
+  width: 80px;
+  background-color: rgba(20, 20, 20, 0.25);
+  border-radius: 14px;
+  padding: 6px 6px 6px 10px;
+  margin: 10px;
+}
+
+listview {
+  lines: 13;
+  spacing: 10px;
+}
+
+element {
+  padding: 0px;             
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+element normal {
+  background-color: transparent;
+}
+
+element selected {
+  background-color: rgba(249, 248, 249, 0.36);
+}
+
+element-text {
+  enabled: false;
+}
+
+element-icon {
+  size: 40px;                
+}
+
+configuration {
+  me-select-entry: "";
+  me-accept-entry: "MousePrimary";
+  matching: "normal";
+  display-drun: "";
+}
+
+entry {
+  enabled: false;
+}

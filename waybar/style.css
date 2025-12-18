@@ -1,135 +1,136 @@
 * {
-    font-family: "Font Awesome 6 Free", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
     font-size: 14px;
     font-weight: 500;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #e5e5e5;
+    background-color: rgba(20, 20, 20, 0.4);
+    color: #e0e0e0;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(200, 200, 200, 0.12);
     margin: 6px 8px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, border 0.3s ease;
 }
 
 window#waybar.hidden {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 button {
-    border: none;
-    border-radius: 8px;
     background: transparent;
-    color: #e5e5e5;
-    transition: all 0.3s ease;
+    border: none;
+    border-radius: 0;
+    color: #e0e0e0;
+    padding: 0 10px;
+    transition: color 0.2s ease;
 }
 
 button:hover {
-    background: rgba(255, 255, 255, 0.12);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+    color: #ffffff;
 }
 
 #workspaces {
-    background: rgba(20, 20, 20, 0.4);
-    border-radius: 14px;
-    padding: 5px 8px;
+    background: transparent;
+    padding: 6px;
+    margin: 4px;
+    border-radius: 8px;
 }
 
 #workspaces button {
-    padding: 6px;
-    margin: 4px;
+    min-width: 20px;
+    min-height: 14px;
+    padding: 1;
+    margin: 6px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.17);
-    transition: 0.15s ease;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.23);
+    background: rgba(200, 200, 200, 0.25);
+    border: 1px solid rgba(240, 240, 240, 0.25);
+    color: transparent;
+    box-shadow: none;
+    transition: background-color 0.2s ease, border 0.2s ease;
 }
 
 #workspaces button:hover {
-    background: rgba(255, 255, 255, 0.55);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
+    background: rgba(210, 210, 210, 0.45);
+    border-color: rgba(220, 220, 220, 0.5);
 }
 
-#workspaces .active {
-    background: rgba(255, 255, 255, 0.85);
-    color: #000;
-    box-shadow:
-        0 0 3px rgba(255, 255, 255, 0.95),
-        0 0 3px rgba(255, 255, 255, 0.55);
+#workspaces button.visible {
+    background: rgba(215, 215, 215, 0.55);
+    border-color: rgba(230, 230, 230, 0.55);
 }
 
-#workspaces .visible {
-    background: rgba(255, 250, 250, 0.863);
+#workspaces button.active {
+    background: rgba(225, 225, 225, 0.8);
+    border-color: rgba(235, 235, 235, 0.7);
+    box-shadow: none;
 }
 
-#workspaces .urgent {
-    background: rgba(255, 90, 90, 0.9);
-    box-shadow:
-        0 0 3px rgba(255, 90, 90, 1),
-        0 0 3px rgba(255, 90, 90, 0.7);
+#workspaces button.urgent {
+    background: rgba(200, 80, 80, 0.9);
+    border-color: rgba(255, 120, 120, 0.9);
 }
 
-#workspaces .inactive {
-    background: rgba(255, 255, 255, 0.12);
-}
 
 #clock,
 #cpu,
 #memory,
 #pulseaudio,
-#tray,
-#window {
-    background: rgba(18, 18, 18, 0.8);
-    padding: 0 15px;
-    margin: 3px 2px;
-    border-radius: 10px;
-    color: #e5e5e5;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: all 0.3s ease;
+#window,
+#custom-arch {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0 10px;
+    color: #e0e0e0;
+    transition: color 0.2s ease;
 }
 
 #clock:hover,
 #cpu:hover,
 #memory:hover,
-#pulseaudio:hover,
-#tray:hover {
-    background: rgba(26, 26, 26, 0.85);
-    border-color: rgba(255, 255, 255, 0.30);
+#pulseaudio:hover{
+    color: #ffffff;
 }
 
 #clock {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px;
-}
-
-#cpu { color: #d0d0d0; }
-
-#memory { color: #eaeaea; }
-
-#pulseaudio { color: #ffffff; }
-#pulseaudio.muted { color: #666; }
-
-#tray { color: #e5e5e5; }
-
-#custom-power {
-    color: #ff6b6b;
     padding: 0 12px;
-    margin: 3px 5px;
-    background: rgba(20, 20, 20, 0.7);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 100, 100, 0.2);
 }
 
-#custom-power:hover {
-    background: rgba(255, 100, 100, 0.2);
+#cpu {
+    color: #d0d0d0;
+}
+
+#memory {
+    color: #e8e8e8;
+}
+
+#pulseaudio {
+    color: #f2f2f2;
+}
+
+#pulseaudio.muted {
+    color: #9a9a9a;
 }
 
 #window {
-    color: #e5e5e5;
     font-style: italic;
+    color: #cfcfcf;
 }
+
+#custom-power {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0 12px;
+    color: #bdbdbd;
+    transition: color 0.2s ease;
+}
+
+#custom-power:hover {
+    color: #ffffff;
+}
+
 
 @keyframes pulse {
     0% { opacity: 1; }

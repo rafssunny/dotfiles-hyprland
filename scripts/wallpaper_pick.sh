@@ -4,7 +4,7 @@
 WALL_DIR="/home/rafa/Imagens/wallpapers"
 
 # Pega a lista de arquivos normal (só nomes)
-choice=$(ls "$WALL_DIR" | wofi --dmenu --prompt "Pesquisar Wallpaper")
+choice=$(ls "$WALL_DIR" | wofi --dmenu --prompt "Pesquisar wallpaper")
 
 # Se escolheu algo, aplica
 if [ -n "$choice" ]; then
